@@ -20,7 +20,7 @@ En l'exécutant, il demande un message a chiffré et après un petit moment, fou
 
 Selon la description, il faut récupérer la clé de chiffrement utilisée.
 
-Malheurseument l'intrication quantique n'est pas encore aussi avancée donc la clé est quelque part en "dur" dans le binaire. De plus lors du chiffrement, la clé doit être transférée dans les registres pour pouvoir être utilisée.
+Malheureusement l'intrication quantique n'est pas encore aussi avancée donc la clé est quelque part en "dur" dans le binaire. De plus lors du chiffrement, la clé doit être transférée dans les registres pour pouvoir être utilisée.
 
 Le but de ce challenge est de le résoudre en boîte noir, c'est à dire, uniquement en regardant ce qui se passe lors de l'exécution sans chercher à le décompiler.
 
@@ -50,20 +50,6 @@ QEMU n'émule pas les instructions "bêtement" une par une, mais recompile des b
 
 La commande précédente ne log que à chaque fin de "Translation Block" (TB).
 En désactivant ce comportement, on obtiens le flag entier !
-
-```bash
-# Log l'état du CPU à chaque instruction
-qemu-x86_64 -one-insn-per-tb -d cpu ./quantum_encryptor 2> cpu_logs.txt
-# Cherche le format du flag dans les logs
-grep $(echo -n "OCC{" | xxd -ps) -C 3 cpu_logs.txt
-
-...
-RAX=0000000005f5e100 RBX=00005555555b2137 RCX=0000000000000000 RDX=5f7741735f763352
-RSI=00007b3a06a2df30 RDI=00007b3a06a2df30 RBP=00005555555add0a RSP=00007b3a06a2d8e8
-R8 =0000000000000000 R9 =0000000000000000 R10=4f43437b7468335f R11=683472645f773459
-R12=00005555555b24f7 R13=0000000000000000 R14=00007b3a06a2df30 R15=7fffffffffffffff
-...
-```
 
 ```bash
 # Log l'état du CPU à chaque instruction
