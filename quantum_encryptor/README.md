@@ -1,4 +1,4 @@
-# Jumpy Jumper 1 & 2
+# Quantum Encryptor
 
 ## Description
 
