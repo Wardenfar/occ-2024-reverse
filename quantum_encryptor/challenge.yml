@@ -1,0 +1,40 @@
+name: "Quantum Encryptor"
+author: Wardenfar
+category: Reverse
+description: |
+  Après l'IA, au tour de l'informatique quantique de se démocratiser.<br>
+  Une startup française est à la pointe dans ce domaine © Encripteria !<br>
+  Leur produit phare est un chiffreur qui ne contient pas de clé.<br>
+  Avant chaque chiffrement, la clé est acquise grâce a un système complexe utilisant l'intrication quantique.<br>
+  La startup assure qu'il est impossible de récuperer la clé car elle se "téléporte" mais vous êtes un peu sceptique.<br>
+  Récupérez la clé de chiffrement utilisée ! 
+
+  `NOTE :` Ce n'est pas un chall crypto :)<br>
+  `NOTE #2 :` Un grand sage a dit : `Work smarter not harder`
+
+  > Format : **OCC{flag}**<br>
+  Author : **Wardenfar**
+value: 0
+type: dynamic
+
+files:
+  - ./quantum_encryptor
+
+extra:
+  initial: 500
+  minimum: 50
+  decay: 13
+
+image: null
+host: null
+
+flags:
+  - type: "static"
+    content: "OCC{th3_h4rd_w4Y_wAs_v3Ry_hard!}"
+    data: "case_insensitive"
+
+tags:
+  - hard
+
+state: visible
+version: "0.1"

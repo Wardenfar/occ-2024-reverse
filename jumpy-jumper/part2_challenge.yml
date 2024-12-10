@@ -1,0 +1,34 @@
+name: "Jumpy Jumper 2/2"
+author: Wardenfar
+category: Reverse
+description: |
+  C'était un peu simple non :) ? Un deuxième niveau est apparu ! 
+
+  > Deploy on [deploy.oteria-cyber-cup.fr](https://deploy.oteria-cyber-cup.fr/)<br>
+  Format : **OCC{flag}**<br>
+  Author : **Wardenfar**
+value: 0
+type: dynamic
+
+extra:
+  initial: 500
+  minimum: 50
+  decay: 13
+
+image: null
+host: null
+
+flags:
+  - type: "static"
+    content: "OCC{F0g_oF_wAr_has_b33n_exp0s3d}"
+    data: "case_insensitive"
+
+requirements:
+  - "Jumpy Jumper 1/2"
+
+tags:
+  - medium
+  - game hacking
+
+state: visible
+version: "0.1"

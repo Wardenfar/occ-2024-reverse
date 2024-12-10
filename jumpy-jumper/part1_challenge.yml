@@ -1,0 +1,31 @@
+name: "Jumpy Jumper 1/2"
+author: Wardenfar
+category: Reverse
+description: |
+  Un nouveau jeu viral est apparu sur le net ! Vous controllez un petit lapin rose et le but est de récuperer toutes les étoiles. Bon courage !
+
+  > Deploy on [deploy.oteria-cyber-cup.fr](https://deploy.oteria-cyber-cup.fr/)<br>
+  Format : **OCC{flag}**<br>
+  Author : **Wardenfar**
+value: 0
+type: dynamic
+
+extra:
+  initial: 500
+  minimum: 50
+  decay: 13
+
+image: null
+host: null
+
+flags:
+  - type: "static"
+    content: "OCC{V3ry_n1cE_d0ub13_Jump!}"
+    data: "case_insensitive"
+
+tags:
+  - easy
+  - game hacking
+
+state: visible
+version: "0.1"
