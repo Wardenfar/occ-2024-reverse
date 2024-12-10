@@ -25,7 +25,7 @@ A chaque positions reçues, le serveur calcule la vitesse du joueur, si elle est
 
 Il est donc possible de tricher en réduisant la gravité, en activant le double saut ou en augmentant la puissance des sauts.
 
-Et finalement, le code JS est "légèrement" obfusqué pour que ce soit pas trop dur ^^
+Et finalement, le code JS est "légèrement" obfusqué pour que ce soit pas trop simple ^^
 
 ### Etape 1 : trouver le code du jeu
 

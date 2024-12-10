@@ -34,7 +34,7 @@ La commande ci-dessous permet de  :
 # Log l'état du CPU à chaque instruction
 qemu-x86_64 -d cpu ./quantum_encryptor 2> cpu_logs.txt
 # Cherche le format du flag dans les logs
-grep $(echo -n "OCC{" | xxd -ps) cpu_logs.txt
+grep $(echo -n "OCC{" | xxd -ps) -C 3 cpu_logs.txt
 
 ...
 RAX=0000000005f5e100 RBX=00005555555b2137 RCX=0000000000000000 RDX=5f7741735f763352
